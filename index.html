@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+
+       <div class="location">
+    <h3 id="city">New York, USA</h3>
+    <p id="date">Today</p>
+</div>
+
+<div class="temp" id="temp">
+    27°
+</div>
+
+<div class="status" id="status">
+    Sunny
+</div>
+
+        <div class="sun">
+            <img id="icon">
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+        <div class="header">
+            <h2>Welcome back Isabella!</h2>
+            <p>Check out today's weather information</p>
+        <div class="search">
+    <input type="text" id="searchInput" placeholder="Search city...">
+    <button onclick="searchCity()">Search</button>
+</div>
+        </div>
+        
+
+        <!-- chart -->
+        <div class="chart">
+            <h3>Upcoming hours</h3>
+
+<div class="hours" id="hours"></div>
+
+        </div>
+
+
+        <!-- cards -->
+        <div class="cards">
+
+  <div class="card">
+    <h4>Humidity</h4>
+    <p id="humidity">82%</p>
+</div>
+
+<div class="card">
+    <h4>Wind</h4>
+    <p id="wind">8 km/h</p>
+</div>
+
+<div class="card">
+    <h4>Feels Like</h4>
+    <p id="feels">30°</p>
+</div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
